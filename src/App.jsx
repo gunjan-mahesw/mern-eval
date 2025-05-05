@@ -3,29 +3,21 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router";
-import Product from "./product";
-import Homepage from "./homepage";
+;
 import Signin from "./signin";
 import Signup from "./signup";
-import Cart from "./cart";
-import Thankyou from "./thankyou";
-import Orderlist from "./orderList";
-import OrderItem from "./orderItem";
-
+import ProductItem from "./ProductItem";
+import CreateProduct from "./CreateProduct";
+import GetAllProduct from "./GetAllProduct";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/products" element={<Product />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/Signin" element={<Signin />} />
         <Route path="/Signup" element={<Signup />} />
-        <Route path="/product/:id" element={<Product />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/thankyou" element={<Thankyou />} />
-        <Route path="/orderlist" element={<Orderlist />} />
-        <Route path="/order/:id" element={<OrderItem />} />
-
+        <Route path="/CreateProduct" element={<CreateProduct />} />
+        <Route path="/GetAllProduct" element={<GetAllProduct />} />
+        <Route path="/ProductItem" element={<ProductItem />} />
       </Routes>
     </BrowserRouter>
   );
