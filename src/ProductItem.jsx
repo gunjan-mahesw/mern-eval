@@ -5,7 +5,7 @@ import axios from "axios"
 export default function Product() {
   const { id } = useParams();
   console.log(id, 'id')
-  const [data, setData]= useState({});
+  const[data, setData]= useState({});
   const[description, setDescription]= useState('');
 
   useEffect(() => {
